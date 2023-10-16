@@ -1,0 +1,131 @@
+/* Temel stil */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+header {
+  background-color: #1f1e1e;
+  color: #ff0000;
+  text-align: center;
+  padding: 20px;
+  height: 800px;
+}
+
+header h1 {
+  margin: 0;
+}
+.menu-category h3 {
+    color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  /* padding: 0; */
+  margin-left: 110px;
+}
+
+nav ul li {
+  display: inline;
+  text-align: center;
+  margin-right: 20px;
+  padding-top: 10px;
+  border-radius: 15px;
+  background-color: #333;
+  width: 150px;
+  height: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-section {
+  padding: 20px;
+}
+h2 {
+    color: #fff;
+}
+
+.menu-category {
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #dbdbdb;
+  border-radius: 10px; 
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px ;
+}
+
+.menu-item h4 {
+  flex: 1;
+  margin: 0;
+}
+
+.menu-item p {
+  flex: 2;
+  margin: 0;
+}
+
+.price {
+  flex: 1;
+  font-weight: bold;
+  /* color: #ff5733; */
+  text-align: right;
+}
+
+.about-section,
+.contact-section {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Mobil uyumlu stil */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu-item {
+    flex-wrap: nowrap;
+    font-size: small;
+  }
+
+  .menu-item h4 {
+    flex: 1;
+    margin: 0;
+  }
+
+  .menu-item p {
+    flex: 1;
+    margin: 0;
+  }
+
+  .price {
+    flex: 1;
+    text-align: right;
+  }
+}
